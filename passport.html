@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>interesting in St.P</title>
+</head>
+<body style="background-color: hwb(202 83% 0%);"> 
+</body>    
+<body style="font-family: Arial, sans-serif;">
+    <style>
+        body {
+            font-family: Titillium Web;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #394773;
+            padding: 10px 20px;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        nav a:hover {
+            background-color: #545968;
+            border-radius: 5px;
+        }
+    </style>
+</body>
+<header>
+    <h1 style="color: white;" align="center"> 
+        Жемчужины Невы</h1>
+        
+    <nav>
+        <a href="site.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="services.html">Услуги</a>
+        <a href="contact.html">Контакты</a>
+        <a href="http://www.hse.ru" target="_blank">При поддержке</a>
+        <a href="passport.html"><b>Паспорт</b></a>
+        <a href="site.html#tg" target="_self"><img height="20px" src="tg.png"></a>    
+</header>
+
+
+<body>
+
+<h1>Страницы паспорта</h1>
+
+<div class="passport-page">
+    <h2>Страница 2</h2>
+    <img src="URL_ВТОРОЙ_СТРАНИЦЫ" alt="Страница 2 паспорта">
+    <p>Фамилия: <span id="lastName">Иванов</span></p>
+    <p>Имя: <span id="firstName">Иван</span></p>
+    <p>Год рождения: <span id="birthYear">1990</span></p>
+    <p>Документ: Паспорт гражданина РФ</p>
+</div>
+
+<div class="passport-page">
+    <h2>Страница 3</h2>
+    <img src="URL_ТРЕТЬЕЙ_СТРАНИЦЫ" alt="Страница 3 паспорта">
+    <p>Место рождения: <span id="birthPlace">Москва</span></p>
+    <p>Дата выдачи: <span id="issueDate">01.01.2010</span></p>
+    <p>Кем выдан: <span id="issuedBy">Отделением МВД России по Москве</span></p>
+</div>
+
+<script>
+    // Пример извлечения данных с использованием DOM
+    const lastName = document.getElementsByTagName('p')[2].childNodes[1].innerText;
+    const firstName = document.getElementsByTagName('p')[3].childNodes[1].innerText;
+    const birthYear = document.getElementsByTagName('p')[4].childNodes[1].innerText;
+
+    console.log("Фамилия:", lastName);
+    console.log("Имя:", firstName);
+    console.log("Год рождения:", birthYear);
+</script>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_JS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        .passport {
+            border: 1px solid #ccc;
+            padding: 15px;
+            background-color: #fff;
+            margin: 20px auto;
+            width: 300px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Паспортные данные</h1>
+<div class="passport">
+    <p>Фамилия: <span id="surname">Иванов</span></p>
+    <p>Имя: <span id="name">Иван</span></p>
+    <p>Год рождения: <span id="birthYear">1990</span></p>
+    <p>Пол: <span id="gender">Мужской</span></p>
+    <p>Гражданство: <span id="citizenship">Россия</span></p>
+</div>
+
+<button onclick="getPassportData()">Получить данные паспорта</button>
+
+<script>
+    function getPassportData() {
+        const surname = document.getElementById('surname').innerText;
+        const name = document.getElementById('name').innerText;
+        const birthYear = document.getElementById('birthYear').innerText;
+
+        console.log('Фамилия:', surname);
+        console.log('Имя:', name);
+        console.log('Год рождения:', birthYear);
+        
+        alert(Фамилия: ${surname}nИмя: ${name}nГод рождения: ${birthYear});
+    }
+</script>
+
+</body>
+</html>
